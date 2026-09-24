@@ -1,0 +1,23 @@
+1:"$Sreact.fragment"
+2:I[49005,["/_next/static/chunks/167c1yf5pyl8w.js","/_next/static/chunks/3t9oyn5-o378v.js","/_next/static/chunks/1svv-pke3_q_m.js"],"Reveal"]
+3:I[22016,["/_next/static/chunks/167c1yf5pyl8w.js","/_next/static/chunks/3t9oyn5-o378v.js","/_next/static/chunks/1svv-pke3_q_m.js"],""]
+4:I[34977,["/_next/static/chunks/167c1yf5pyl8w.js","/_next/static/chunks/3t9oyn5-o378v.js","/_next/static/chunks/1svv-pke3_q_m.js"],"PlanBuilder"]
+5:I[97367,["/_next/static/chunks/167c1yf5pyl8w.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+a:I[97367,["/_next/static/chunks/167c1yf5pyl8w.js"],"ViewportBoundary"]
+b:I[97367,["/_next/static/chunks/167c1yf5pyl8w.js"],"MetadataBoundary"]
+c:I[27201,["/_next/static/chunks/167c1yf5pyl8w.js"],"IconMark"]
+e:I[39756,["/_next/static/chunks/167c1yf5pyl8w.js"],"default"]
+f:I[37457,["/_next/static/chunks/167c1yf5pyl8w.js"],"default"]
+9:X
+11:X
+11:C
+0:{"buildId":"GJTvt-cWnlH0WJpn6MhHK","data":[{"rsc":["$","$1","c",{"children":[[["$","section",null,{"className":"bg-navy pb-14 pt-28 text-white md:pb-16 md:pt-36","children":["$","div",null,{"className":"mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-14 xl:px-20","children":["$","$L2",null,{"children":[["$","div",null,{"className":"flex items-center gap-3.5","children":[["$","span",null,{"aria-hidden":"true","className":"size-1 bg-brass"}],["$","span",null,{"className":"type-eyebrow text-white/55","children":"增长方案构建器 · GROWTH PLAN BUILDER"}]]}],["$","h1",null,{"className":"type-h2 mt-8 max-w-[16em]","children":["不是买一项服务，",["$","br",null,{}],"而是一起构建你的海外增长方案。"]}],["$","p",null,{"className":"type-lead mt-6 max-w-[52ch] text-pretty text-white/65","children":"说清楚你要去哪里、想解决什么问题，剩下的交给流程 —— 四步之后你会得到一份可以拿去讨论的方案。"}],["$","ul",null,{"className":"mt-9 flex flex-wrap gap-x-8 gap-y-3 text-[13px] text-white/55","children":[["$","li","无需在线付款",{"className":"flex items-center gap-2.5","children":[["$","span",null,{"aria-hidden":"true","className":"size-1 bg-brass"}],"无需在线付款"]}],["$","li","不展示固定报价",{"className":"flex items-center gap-2.5","children":[["$","span",null,{"aria-hidden":"true","className":"size-1 bg-brass"}],"不展示固定报价"]}],["$","li","顾问逐项确认范围",{"className":"flex items-center gap-2.5","children":[["$","span",null,{"aria-hidden":"true","className":"size-1 bg-brass"}],"顾问逐项确认范围"]}]]}],["$","nav",null,{"aria-label":"面包屑","className":"mt-10","children":["$","$L3",null,{"href":"/","className":"text-[13px] text-white/40 transition-colors hover:text-white/80","children":"← 返回首页"}]}]]}]}]}],["$","$L4",null,{}]],[["$","script","script-0",{"src":"/_next/static/chunks/3t9oyn5-o378v.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/1svv-pke3_q_m.js","async":true}]],["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":"$@8","staleTime":"$9","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$La",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"增长方案构建器 | 麦炽科技 AdsMarch"}],["$","meta","1",{"name":"description","content":"说清楚你要进入哪个市场、想解决什么增长问题，把麦炽的能力模块组合成一份可执行的海外增长方案。无需在线付款，顾问将据此给出定制方案。"}],["$","meta","2",{"name":"keywords","content":"海外增长,出海营销,海外广告投放,红人营销,独立站运营,应用商店优化,搜索与 AI 可见度"}],["$","meta","3",{"name":"robots","content":"noindex, nofollow"}],["$","meta","4",{"property":"og:title","content":"麦炽科技 AdsMarch | 为海外市场搭建完整的增长系统"}],["$","meta","5",{"property":"og:description","content":"把媒介投放、创意内容、红人与社交、搜索与 AI 可见度、电商转化和数据分析组织成可复用的增长路径。"}],["$","meta","6",{"property":"og:site_name","content":"麦炽科技 AdsMarch"}],["$","meta","7",{"property":"og:locale","content":"zh_CN"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary"}],["$","meta","10",{"name":"twitter:title","content":"麦炽科技 AdsMarch | 为海外市场搭建完整的增长系统"}],["$","meta","11",{"name":"twitter:description","content":"把媒介投放、创意内容、红人与社交、搜索与 AI 可见度、电商转化和数据分析组织成可复用的增长路径。"}],["$","link","12",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$Lc","13",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":"$@d","staleTime":"$9","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Le",null,{"parallelRouterKey":"children","template":["$","$Lf",null,{}]}]]}],"isPartial":"$@10","staleTime":"$9","varyParams":"$11"}],"isUpgradeableISRFallback":false,"a":"$@12","rootVaryParams":null,"needsRuntimeRequest":"$@13"}
+7:null
+13:true
+9:300
+9:C
+12:0
+d:"$undefined"
+10:"$undefined"
+8:"$undefined"
