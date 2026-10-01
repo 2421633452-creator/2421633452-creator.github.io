@@ -1,3 +1,4 @@
 User-Agent: *
-Disallow: /
+Allow: /
 
+Sitemap: https://2421633452-creator.github.io/sitemap.xml
