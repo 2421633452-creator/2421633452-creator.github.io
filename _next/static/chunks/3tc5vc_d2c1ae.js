@@ -614,7 +614,7 @@
                     }),
                     (0, t.jsx)("p", {
                       className: "mt-2 text-[13px] leading-relaxed text-steel",
-                      children: "从上方选择增长目标、目标市场与所需能力，这里会实时生成你的方案。",
+                      children: "从上方选择增长方案、目标市场与所需能力，这里会实时生成你的方案。",
                     }),
                   ],
                 })
@@ -758,10 +758,9 @@
             className: "border-t border-hairline bg-mist px-5 py-5 sm:px-6",
             children: [
               (0, t.jsxs)("dl", {
-                className: "grid grid-cols-3 gap-3",
+                className: "grid grid-cols-2 gap-3",
                 children: [
                   (0, t.jsx)(f, { value: +!!e.growthPlan, label: "Plan" }),
-                  (0, t.jsx)(f, { value: e.growthGoals ? e.growthGoals.length : 0, label: "Goals" }),
                   (0, t.jsx)(f, { value: +!!e.targetMarket, label: "Market" }),
                 ],
               }),
@@ -892,11 +891,6 @@
                         sub: [l.targetMarket?.name, l.targetMarket?.detail].filter(Boolean).join(" · "),
                       }),
                       (0, t.jsx)(k, { label: "Business Type", value: l.businessType?.en, sub: l.businessType?.name }),
-                      (0, t.jsx)(k, {
-                        label: l.growthGoals.length > 1 ? "Growth Goals" : "Growth Goal",
-                        value: l.growthGoals.map((e) => e.en).join(", "),
-                        sub: l.growthGoals.map((e) => e.name).join("、"),
-                      }),
                       (0, t.jsxs)("div", {
                         className: "border-b border-hairline px-4 py-3.5 last:border-b-0 sm:px-5",
                         children: [
@@ -1013,7 +1007,6 @@
                               "",
                               "── 增长方案 ──",
                               `增长方案：${t.growthPlan ? `${t.growthPlan.name}（${t.growthPlan.en}）` : "未选择"}`,
-                              `增长目标：${t.growthGoals.length ? t.growthGoals.map((e) => `${e.name}（${e.en}）`).join("、") : "未选择"}`,
                               `目标市场：${t.targetMarket ? `${t.targetMarket.name}（${t.targetMarket.en}）${t.targetMarket.detail ? ` \xb7 ${t.targetMarket.detail}` : ""}` : "未选择"}`,
                               `业务类型：${t.businessType ? `${t.businessType.name}（${t.businessType.en}）` : "未选择"}`,
                               `投放规模：${t.scaleBand ?? "未确定"}`,
@@ -1047,7 +1040,7 @@
                       }),
                       (0, t.jsx)("p", {
                         className: "mt-2 text-[13px] leading-relaxed text-steel",
-                        children: "目标市场、增长目标与已选能力已自动带入，无需重复填写。",
+                        children: "目标市场与已选能力已自动带入，无需重复填写。",
                       }),
                       (0, t.jsxs)("div", {
                         className: "mt-5 grid gap-x-6 gap-y-5 sm:grid-cols-2",
@@ -1228,9 +1221,8 @@
     let C = [
         { id: "engine", num: "01", title: "选择增长链路", en: "Choose Your Growth Engine" },
         { id: "plan", num: "02", title: "选择增长方案", en: "Choose Your Growth Plan" },
-        { id: "goal", num: "03", title: "定义目标", en: "Define Your Goal" },
-        { id: "market", num: "04", title: "选择市场", en: "Select Your Market" },
-        { id: "capabilities", num: "05", title: "选择能力", en: "Select Capabilities" },
+        { id: "market", num: "03", title: "选择市场", en: "Select Your Market" },
+        { id: "capabilities", num: "04", title: "选择能力", en: "Select Capabilities" },
       ],
       _LK = [
         {
@@ -1366,14 +1358,13 @@
               return (
                 _eg && t.push("engine"),
                 _gp && t.push("plan"),
-                e.length && t.push("goal"),
                 c && t.push("market"),
                 _capCount(G) && t.push("capabilities"),
                 t
               );
             }, [_eg, _gp, e, c, G]),
             et = (0, a.useMemo)(
-              () => (_eg ? (_gp ? (e.length ? (c ? "capabilities" : "market") : "goal") : "plan") : "engine"),
+              () => (_eg ? (_gp ? (c ? "capabilities" : "market") : "plan") : "engine"),
               [_eg, _gp, e, c],
             ),
             ea = !!(_gp || e.length || c || N) || _capCount(G) > 0;
@@ -1416,8 +1407,8 @@
                                         type: "button",
                                         onClick: () => {
                                           X &&
-                                            (l(X.goalIds ?? (X.goalId ? [X.goalId] : [])),
-                                            _sg(_lkOf((X.goalIds ?? [])[0] ?? X.goalId)),
+                                            (l([]),
+                                            _sg(X.growthPathId ?? _lkOf((X.goalIds ?? [])[0] ?? X.goalId)),
                                             _gset(X.growthPlanId ?? null),
                                             j(X.marketId),
                                             f(X.marketDetail ?? ""),
@@ -1482,7 +1473,7 @@
                             num: "02",
                             title: "哪个方案适合你现在的阶段？",
                             en: "Choose Your Growth Plan",
-                            desc: "不同增长阶段对应不同的服务模式与方案结构。选一个最接近的，后面的目标与能力会在这个范围内收敛。",
+                            desc: "不同增长阶段对应不同的服务模式与方案结构。选一个最接近的，后面的市场与能力会在这个范围内收敛。",
                             done: ee.includes("plan"),
                             children: (0, t.jsx)(_pg, {
                               options: _GP,
@@ -1490,22 +1481,9 @@
                               onToggle: (e) => _gset((t) => (t === e ? null : e)),
                             }),
                           }),
-                          (0, t.jsx)($, {
-                            id: "goal",
-                            num: "03",
-                            title: "你想达成什么？",
-                            en: "What are you trying to achieve?",
-                            desc: "可多选。多个增长目标可以同时成立，后面的能力推荐会据此收敛，而不是把所有服务一次性铺给你。",
-                            done: ee.includes("goal"),
-                            children: (0, t.jsx)(b, {
-                              options: _eg ? n.filter((t) => _LK.find((e) => e.id === _eg).goals.includes(t.id)) : n,
-                              selected: e,
-                              onToggle: (e) => l((t) => (t.includes(e) ? t.filter((t) => t !== e) : [...t, e])),
-                            }),
-                          }),
                           (0, t.jsxs)($, {
                             id: "market",
-                            num: "04",
+                            num: "03",
                             title: "你想去哪里增长？",
                             en: "Where do you want to grow?",
                             desc: "可以选一个已列出的市场，也可以直接填写任何其它市场 —— 我们不限制目标国家。",
@@ -1617,10 +1595,10 @@
                           }),
                           (0, t.jsx)($, {
                             id: "capabilities",
-                            num: "05",
+                            num: "04",
                             title: "哪些能力进入你的方案？",
                             en: "Which capabilities belong in your plan?",
-                            desc: "按服务大类展开、勾选具体产品，可跨多个大类自由组合。推荐标签按你已选的目标收敛候选，判断留给你和顾问。",
+                            desc: "按服务大类展开、勾选具体产品，可跨多个大类自由组合。判断留给你和顾问。",
                             done: ee.includes("capabilities"),
                             children: (0, t.jsx)(_g, {
                               goalIds: e,
@@ -1733,6 +1711,7 @@
                   ((t) => {
                     let a = {
                       goalIds: e,
+                      growthPathId: _eg,
                       growthPlanId: _gp,
                       marketId: c,
                       marketDetail: v,
